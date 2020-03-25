@@ -1,0 +1,46 @@
+﻿<Window x:Class="BookshopApp.FromCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookshopApp"
+        mc:Ignorable="d"
+        Title="FromCustomer" Height="548.875" Width="800">
+    <Grid>
+        <TextBox x:Name="txtcusid" HorizontalAlignment="Left" Height="23" Margin="128,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="txtcusName" HorizontalAlignment="Left" Height="23" Margin="379,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="33,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Customer ID :" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.279,0.483"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="266,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="First-Lastname : " FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Height="89" Margin="128,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="71,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Adress :" FontWeight="Bold" FontSize="14" RenderTransformOrigin="1.139,0.587"/>
+        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Height="23" Margin="128,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="80,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Email :" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnsearch" Content="Search" HorizontalAlignment="Left" Margin="552,55,0,0" VerticalAlignment="Top" Width="72" Click="btnsearch_Click" Height="23">
+            <Button.Background>
+                <SolidColorBrush Color="#FFD4CFCF" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtserch" HorizontalAlignment="Left" Height="23" Margin="320,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <Button x:Name="btnadd" Content="Add" HorizontalAlignment="Left" Margin="641,55,0,0" VerticalAlignment="Top" Width="125" Height="35" Click="btnadd_Click" FontWeight="Bold" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnremove" Content="Delete" HorizontalAlignment="Left" Margin="641,95,0,0" VerticalAlignment="Top" Width="125" Height="35" Click="btnremove_Click" FontWeight="Bold" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnupdate" Content="Edit" HorizontalAlignment="Left" Margin="641,135,0,0" VerticalAlignment="Top" Width="125" Height="35" Click="btnupdate_Click">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnback" Content="Return to Menu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="113" Height="24" FontWeight="Bold" Click="btnback_Click">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <DataGrid x:Name="CustomerDataGrid" HorizontalAlignment="Left" Height="249" Margin="33,259,0,0" VerticalAlignment="Top" Width="733"/>
+    </Grid>
+</Window>

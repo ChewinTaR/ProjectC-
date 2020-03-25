@@ -1,0 +1,36 @@
+﻿<Window x:Class="BookshopApp.fromMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookshopApp"
+        mc:Ignorable="d"
+        Title="fromMenu" Height="450" Width="569.34">
+    <Grid Background="White">
+        <GroupBox x:Name="groupBox" Header="MENU" HorizontalAlignment="Left" Height="399" VerticalAlignment="Top" Width="541" Margin="10,0,0,0">
+            <GroupBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </GroupBox.Background>
+            <Button x:Name="btnlogout" Content="Logout" Margin="383,342,10,0" VerticalAlignment="Top" Height="27" BorderBrush="#FF727272" FontWeight="Bold" Click="btnlogout_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+        </GroupBox>
+        <Button x:Name="button" Content="Manage Customers" HorizontalAlignment="Left" Margin="109,80,0,0" VerticalAlignment="Top" Width="323" Height="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="14" FontWeight="Bold" Click="button_Click">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnbook" Content="Manage Books" HorizontalAlignment="Left" Margin="109,172,0,0" VerticalAlignment="Top" Width="323" Height="71" FontWeight="Bold" Click="btnbook_Click">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnorder" Content="Orders books" HorizontalAlignment="Left" Margin="109,262,0,0" VerticalAlignment="Top" Width="323" Height="68" Click="btnorder_Click" FontWeight="Bold">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
